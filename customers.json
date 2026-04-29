@@ -1,0 +1,7 @@
+[
+  {"customer": "Pedro", "product": "Hamburguer", "quantity": 2, "price": 25.50},
+  {"customer": "Maria", "product": "Refrigerante", "quantity": 1, "price": 8.00},
+  {"customer": "Pedro", "product": "Batata Frita", "quantity": 1, "price": 12.00},
+  {"customer": "João", "product": "Hamburguer", "quantity": 1, "price": 25.50},
+  {"customer": "Maria", "product": "Sorvete", "quantity": 3, "price": 10.00}
+]
