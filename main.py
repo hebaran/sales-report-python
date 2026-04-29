@@ -1,22 +1,9 @@
-from services import (
-    get_total_customers_spending,
-    get_best_selling_product,
-    get_total_sold
-)
+from services import get_total_customers_spending, get_best_selling_product, get_total_sold
+from views import show_customers_spending, show_best_selling_product, show_total_sold
+import json
 
-from views import (
-    show_customers_spending,
-    show_best_selling_product,
-    show_total_sold
-)
-
-customers_data = [
-  ("Pedro", "Hamburguer", 2, 25.50),
-  ("Maria", "Refrigerante", 1, 8.00),
-  ("Pedro", "Batata Frita", 1, 12.00),
-  ("João", "Hamburguer", 1, 25.50),
-  ("Maria", "Sorvete", 3, 10.00)
-]
+with open("customers.json", "r", encoding="UTF-8") as data:
+    customers_data = json.load(data)
 
 total_customers_spending = get_total_customers_spending(customers_data)
 show_customers_spending(total_customers_spending)
